@@ -1,9 +1,10 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
         <script src="script.js"></script>
     </head>
-    <body>
+    <body onload="onLoadCounter()">
         <h1> JavaScript Counter </h1>  
         <p id="description">
           This project is written with JavaScript
@@ -18,6 +19,9 @@
             </button>
             <button disabled onclick="pause()" type="button" class="pause">
                 Pause
+            </button>
+            <button disabled onclick="reset()" type="button" class="reset">
+                Reset
             </button>
         </div>
     </body>
